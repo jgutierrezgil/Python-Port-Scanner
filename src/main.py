@@ -66,6 +66,13 @@ def main():
         help='Modo verbose'
     )
     
+    parser = argparse.ArgumentParser(
+        description='Scanner ports with multithreading\n\n'
+                   'Usage: python main.py <target> [-p port-range] [-t timeout] [--threads threads] [-v]\n'
+                   'Example: python main.py localhost -p 80-443 -t 0.5 --threads 50 -v'
+    )
+        
+    
     args = parser.parse_args()
     setup_logging(args.verbose)
     logger = logging.getLogger(__name__)
