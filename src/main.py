@@ -41,6 +41,7 @@ def main():
         help='IP or hostname to scan'
     )
     
+    # Well known ports: 0-1023
     parser.add_argument(
         '-p', '--ports',
         default='1-1024',

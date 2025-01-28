@@ -22,6 +22,16 @@ This project is a port scanner written in Python. It allows you to scan open por
     pip install -r requirements.txt
     ```
 
+## Setup
+
+To set up the virtual environment, run the following commands:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+pip install -r requirements.txt
+```
+
 ## Usage
 
 Run the main script to scan ports:
@@ -30,10 +40,17 @@ python port_scanner.py <IP_ADDRESS>
 ```
 Replace `<IP_ADDRESS>` with the IP address you want to scan.
 
+## Running Tests
+
+To run the tests, use the following command:
+```bash
+pytest
+```
+
 ## Contributions
 
 Contributions are welcome. Please open an issue or a pull request to discuss any major changes.
 
 ## License
 
-This project is licensed under the GLP3 License. See the `LICENSE` file for more details.
+This project is licensed under the GPL-3.0 License. See the `LICENSE` file for more details.
